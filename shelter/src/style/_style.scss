@@ -1,0 +1,59 @@
+body{
+  font-family: Georgia, serif;
+  font-size: 15px;
+  color: $color-dark-xl;
+}
+wrapper{
+  box-sizing: border-box;
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .logo-title{
+    font-size: 32px;
+    color: $color-primary;
+    letter-spacing: 0.06em;
+    line-height: 110%;
+  }
+  .logo-subtitle{
+    font-family: Arial, serif ;
+    margin-top: 10px;
+    font-size: 13px;
+    color: $color-light-xl;
+    letter-spacing: 0.1em;
+    line-height: 100%;
+  }
+}
+
+.menu{
+  font-family: Arial, serif ;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  font-size: 15px;
+  align-items: center;
+  max-width: 443px;
+  justify-content: space-between;
+  .link{
+    line-height: 24px;
+    text-decoration: none;
+    color: $color-dark-s;
+    letter-spacing: 0.00385em;
+  }
+  .active{
+    color: $color-light-s;
+    border-bottom: 3px solid $color-primary;
+  }
+}
+
