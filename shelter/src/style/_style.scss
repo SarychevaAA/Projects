@@ -2,10 +2,11 @@ body{
   font-family: Georgia, serif;
   font-size: 15px;
   color: $color-dark-xl;
+  min-width: 1280px;
 }
 wrapper{
   box-sizing: border-box;
-  max-width: 1280px;
+  width: 1280px;
   padding: 0 40px;
   margin: 0 auto;
 }
@@ -56,4 +57,48 @@ wrapper{
     border-bottom: 3px solid $color-primary;
   }
 }
+
+.not-only{
+  margin-top: -118px;
+  padding-top: 180px;
+  background: #211F20;
+  background: url("../img/background.png"), linear-gradient(-60deg, $background-gradient-stop,#211F20, $background-gradient-start 80%) ;
+  wrapper{
+    display: flex;
+    flex-direction: row;
+    gap: 42px;
+  }
+  .not-only-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 42px;
+  }
+  .not-only-content-heading{
+    width: 310px;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 130%;
+    color: $color-light-xl;
+    margin: -81px 0 0;
+  }
+  .not-only-content-subheading{
+    margin: -1px 0 0;
+    font-family: Arial, serif;
+    line-height: 155%;
+    color: $color-dark-s;
+  }
+  button{
+    width: 207px;
+    height: 52px;
+    background: $color-primary;
+    border-radius: 100px;
+    color: $color-dark-3xl;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: 0.06em;
+
+  }
+}
+
 
