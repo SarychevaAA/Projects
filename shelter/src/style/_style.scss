@@ -11,6 +11,18 @@ body{
   padding: 0 40px;
   margin: 0 auto;
 }
+button{
+  width: 207px;
+  height: 52px;
+  background: $color-primary;
+  border-radius: 100px;
+  border: none;
+  color: $color-dark-3xl;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 0.06em;
+
+}
 .header{
   display: flex;
   flex-direction: row;
@@ -91,14 +103,6 @@ body{
   }
   button{
     width: 207px;
-    height: 52px;
-    background: $color-primary;
-    border-radius: 100px;
-    color: $color-dark-3xl;
-    font-size: 17px;
-    line-height: 22px;
-    letter-spacing: 0.06em;
-
   }
 }
 
@@ -137,3 +141,59 @@ body{
   }
 }
 
+.our-friends{
+  background: $color-light-l;
+  .wrapper{
+    padding: 80px 40px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+  .our-friends-heading{
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    width: 400px;
+    margin: 0 0 0px;
+    text-align: center;
+  }
+  .slider{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    height: 435px;
+    justify-content: space-between;
+    gap: 53px;
+    .slider-cards{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 90px;
+    }
+    .slider-cards-card{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+      background: $color-light-s;
+      padding-bottom: 30px;
+      p{
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 0.06em;
+      }
+      button{
+        width: 187px;
+        border: 2px solid $color-primary;
+        background: $color-light-s;
+      }
+    }
+  }
+  button{
+    width: 261px;
+  }
+}
