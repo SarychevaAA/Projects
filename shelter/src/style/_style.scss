@@ -3,6 +3,7 @@ body{
   font-size: 15px;
   color: $color-dark-xl;
   min-width: 1280px;
+  background: $color-light-xl;
 }
 .wrapper{
   box-sizing: border-box;
@@ -101,4 +102,38 @@ body{
   }
 }
 
+.about{
+  .wrapper{
+    margin: 80px auto 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-content{
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .about-content-heading{
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: $color-dark-l;
+    margin: 0;
+    width: 370px;
+    font-weight: normal;
+  }
+  .about-content-subheading{
+    font-family: Arial, serif;
+    line-height: 160%;
+    vertical-align: top;
+    margin: 0 0 0;
+  }
+  .about-content-subheading:last-of-type{
+    vertical-align: center;
+  }
+}
 
