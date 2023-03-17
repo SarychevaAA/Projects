@@ -4,7 +4,7 @@ body{
   color: $color-dark-xl;
   min-width: 1280px;
 }
-wrapper{
+.wrapper{
   box-sizing: border-box;
   width: 1280px;
   padding: 0 40px;
@@ -63,7 +63,7 @@ wrapper{
   padding-top: 180px;
   background: #211F20;
   background: url("../img/background.png"), linear-gradient(-60deg, $background-gradient-stop,#211F20, $background-gradient-start 80%) ;
-  wrapper{
+  .wrapper{
     display: flex;
     flex-direction: row;
     gap: 42px;
