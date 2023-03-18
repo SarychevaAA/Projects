@@ -238,3 +238,67 @@ button{
     }
   }
 }
+
+.in-addition{
+  color: $color-dark-l;
+  .wrapper{
+    padding: 80px 40px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  img{
+    //margin-top: 1px;
+  }
+  .in-addition-content{
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .heading{
+    width: 300px;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    margin: 0;
+  }
+  .subheading{
+    margin: 0;
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+  }
+  .credit-card{
+    margin: 0;
+    margin-top: -2px;
+    background: $color-primary;
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 9px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    h4{
+      margin: 0;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 115%;
+      letter-spacing: 0.06em;
+    }
+  }
+  .legal-information{
+    font-family: Arial, serif;
+    font-style: italic;
+    font-size: 12px;
+    line-height: 18px;
+    color: $color-dark-m;
+    margin: 0;
+  }
+
+}
