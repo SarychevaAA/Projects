@@ -75,7 +75,7 @@ button{
   margin-top: -118px;
   padding-top: 180px;
   background: #211F20;
-  background: url("../img/background.png"), linear-gradient(-60deg, $background-gradient-stop,#211F20, $background-gradient-start 80%) ;
+  background: url("../img/background.png"), linear-gradient(-60deg, $background-header-gradient-stop,#211F20, $background-gradient-start 80%) ;
   .wrapper{
     display: flex;
     flex-direction: row;
@@ -299,6 +299,62 @@ button{
     line-height: 18px;
     color: $color-dark-m;
     margin: 0;
+  }
+}
+
+.footer{
+  background: #211F20;
+  background: url("../img/background.png"), linear-gradient(-60deg, $background-footer-gradient-stop,#211F20, $background-gradient-start 80%) ;
+  .wrapper{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+  }
+  h3{
+    font-size: 35px;
+    line-height: 130%;
+    font-weight: normal;
+    letter-spacing: 0.06em;
+    color: $color-light-xl;
+    margin: 16px 0 0;
+  }
+  h4{
+    font-size: 20px;
+    line-height: 115%;
+    letter-spacing: 0.06em;
+    font-weight: normal;
+    margin: 0;
+  }
+  .connection{
+    margin: 0;
+    color: $color-primary;
+    width: 425px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    .connection-item{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  .location{
+    margin: 0;
+    color: $color-primary;
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    .location-item{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 20px;
+    }
   }
 
 }
