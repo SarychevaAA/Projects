@@ -1,0 +1,38 @@
+.footer{
+  background: #211F20;
+  background: url("../../img/background.png"), linear-gradient(-60deg, $background-footer-gradient-stop,#211F20, $background-gradient-start 80%) ;
+  .wrapper{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+  }
+}
+.footer-information-block__header{
+  color: $color-light-xl;
+  margin: 16.6px 0 0;
+}
+.footer-information-block{
+  margin: 0;
+  color: $color-primary;
+  display: flex;
+  flex-direction: column;
+}
+.footer__connection{
+  width: 425px;
+  gap: 40px;
+}
+.footer__location{
+  margin: 0;
+  color: $color-primary;
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.footer__element{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}

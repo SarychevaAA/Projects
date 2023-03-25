@@ -1,0 +1,29 @@
+.logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo__title{
+  @include font($size: 32px, $height: 110%);
+  .logo__title_color-on-dark-background{
+    color: $color-primary;
+  }
+  .logo__title_color-on-light-background{
+    color: $color-dark-l;
+  }
+
+}
+
+.logo__subtitle{
+  @extend %font-add;
+  @include font($size: 13px, $spacing: 0.1em);
+  margin-top: 12px;
+  .logo__subtitle_color-on-dark-background{
+    color: $color-light-xl;
+  }
+  .logo__subtitle_color-on-light-background{
+    color: $color-dark-3xl;
+  }
+}
+

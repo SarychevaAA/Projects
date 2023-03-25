@@ -1,0 +1,9 @@
+.button{
+  @include font($size: 17px, $height: 22px);
+  width: 207px;
+  height: 52px;
+  background: $color-primary;
+  border-radius: 100px;
+  border: none;
+  color: $color-dark-3xl;
+}

@@ -1,0 +1,29 @@
+.menu{
+  @extend %font-add;
+  @include font($size: 1.5rem, $height: 160%);
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu__element{
+  text-decoration: none;
+  letter-spacing: 0.0038em;
+  &_color-on-dark-background{
+    color: $color-dark-s;
+  }
+  &_color-on-light-background{
+    color: $color-dark-l;
+  }
+  &_active{
+    border-bottom: 3px solid $color-primary;
+    &-color-on-dark-background{
+      color: $color-light-s;
+    }
+    &-color-on-light-background{
+      color: $color-dark-3xl;
+    }
+  }
+}

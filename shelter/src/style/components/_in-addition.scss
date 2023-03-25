@@ -1,0 +1,48 @@
+.in-addition{
+  color: $color-dark-l;
+  .wrapper{
+    padding: 80px 40px 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+.in-addition__content{
+  max-width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.in-addition__heading{
+  max-width: 300px;
+}
+
+.in-addition__subheading{
+  margin: 0;
+  @include font($size: 15px, $height: 110%, $spacing: 0.06em);
+}
+
+.in-addition__credit-card{
+  margin: 0;
+  margin-top: -1.8px;
+  background: $color-primary;
+  box-sizing: border-box;
+  width: 350px;
+  border-radius: 9px;
+  padding: 10px 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.in-addition__legal-information{
+  @extend %font-add;
+  @include font($size: 12px, $height: 18px, $style: italic, $spacing: 0);
+  color: $color-dark-m;
+  margin: 0;
+}

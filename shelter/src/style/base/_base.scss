@@ -1,0 +1,25 @@
+html{
+  font-size: 10px;
+}
+body{
+  @extend %font-prim;
+  @include font($size: 1.5rem, $height: 160%, $spacing: 0);
+  color: $color-dark-xl;
+  min-width: 1280px;
+  background: $color-light-xl;
+}
+
+
+h1{
+  @include font($size: 44px, $height: 130%, $spacing: 0);
+  margin: 0;
+}
+
+h3{
+  @include font($size: 35px, $height: 130%);
+  margin: 0;
+}
+h4{
+  @include font($size: 20px, $height: 115%);
+  margin: 0;
+}
