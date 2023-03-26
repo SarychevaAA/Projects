@@ -9,6 +9,7 @@
 }
 
 .menu__element{
+  box-sizing: border-box;
   text-decoration: none;
   letter-spacing: 0.0038em;
   &_color-on-dark-background{
