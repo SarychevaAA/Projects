@@ -1,5 +1,6 @@
 html{
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 body{
   @extend %font-prim;
@@ -7,6 +8,7 @@ body{
   color: $color-dark-xl;
   min-width: 1280px;
   background: $color-light-xl;
+  cursor: default;
 }
 
 

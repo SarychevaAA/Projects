@@ -9,16 +9,24 @@
 }
 
 .menu__element{
+  @extend %transition;
   box-sizing: border-box;
   text-decoration: none;
   letter-spacing: 0.0038em;
   &_color-on-dark-background{
     color: $color-dark-s;
+    &:hover{
+      color: $color-light-s;
+    }
   }
   &_color-on-light-background{
     color: $color-dark-l;
+    &:hover{
+      color: $color-dark-3xl;
+    }
   }
   &_active{
+    cursor: default;
     border-bottom: 3px solid $color-primary;
     &-color-on-dark-background{
       color: $color-light-s;

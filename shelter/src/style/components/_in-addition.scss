@@ -27,8 +27,10 @@
 }
 
 .in-addition__credit-card{
+  text-decoration: none;
   margin: 0;
   margin-top: -1.8px;
+  color: $color-dark-l;
   background: $color-primary;
   box-sizing: border-box;
   width: 350px;

@@ -21,7 +21,18 @@
     width: 14px;
     height: 6px;
   }
+  &_active{
+    &:hover{
+      @extend %transition;
+      background: $color-primary-light;
+      cursor: pointer;
+    }
+  }
+  &_colored{
+    background: $color-primary;
+  }
   &_not-active{
+    cursor: default;
     color: #CDCDCD;
     border-color: #CDCDCD;
   }
@@ -46,6 +57,7 @@
   align-items: center;
   background: $color-light-s;
   padding-bottom: 30px;
+  cursor: pointer;
   img{
     width: 270px;
     height: 270px;
@@ -59,6 +71,14 @@
     &_border{
       border: 2px solid $color-primary;
       background: $color-light-s;
+    }
+  }
+  &:hover{
+    @extend %transition;
+    box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+    .button{
+      @extend %transition;
+      background: $color-primary-light;
     }
   }
 }
