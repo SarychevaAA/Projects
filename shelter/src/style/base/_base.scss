@@ -9,9 +9,14 @@ body{
   min-width: 1280px;
   background: $color-light-xl;
   cursor: default;
+  a:checked &{
+    opacity: 0%;
+    transition: opacity 5s ease-in 0.15s;
+  }
 }
-
-
+a{
+  @extend %transition;
+}
 h1{
   @include font($size: 44px, $height: 130%, $spacing: 0);
   margin: 0;

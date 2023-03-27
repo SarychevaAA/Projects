@@ -11,9 +11,8 @@
   text-align: center;
   align-items: center;
   justify-content: center;
-  //text-justify: ;
+  @extend %transition;
   &:hover{
-    @extend %transition;
     background: $color-primary-light;
   }
 }
