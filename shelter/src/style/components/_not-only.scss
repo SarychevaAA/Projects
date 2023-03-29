@@ -78,14 +78,10 @@
     position: relative;
     bottom: 0;
     left: 70px;
-    //width: calc(569px + (698 - 569) * ((100vw - 768px)/(1000 - 768)));
-    //height: calc(593px + (728 - 593) * ((100vw - 768px)/(1000 - 768)));
     @include media-tablet-small{
       position: relative;
       bottom: 0;
       left: calc(20px + (70 - 20) * ((100vw - 320px)/(760 - 320)));
-      //width: calc(260px + (569 - 260) * ((100vw - 320px)/(760 - 320)));
-      //height: calc(271.77px + (593 - 271.77) * ((100vw - 320px)/(760 - 320)));
     }
   }
   img{
@@ -98,15 +94,10 @@
       max-width: 100%;
       max-height: 100%;
     }
-    //@include media-tablet-small{
-    //  min-width: 260px;
-    //  min-height: 271.77px;
-    //}
     @include media-laptop{
       width: calc(569px + (698 - 569) * ((100vw - 768px)/(1000 - 768)));
       height: calc(593px + (728 - 593) * ((100vw - 768px)/(1000 - 768)));
       @include media-tablet-small{
-        //min-width: 260px;
         min-width: 260px;
         min-height: 271.77px;
         width: calc(260px + (569 - 260) * ((100vw - 320px)/(760 - 320)));
