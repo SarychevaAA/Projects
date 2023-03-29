@@ -3,10 +3,10 @@
   max-width: 1280px;
   padding: 0 40px;
   margin: 0 auto;
-  @include media-laptop{
+  @include media-content{
     padding: 0 calc(30px + (40 - 30) * ((100vw - 768px)/(1280 - 768)));
   }
-  @include media-tablet{
+  @include media-tablet-small{
     padding: 0 calc(20px + (30 - 20) * ((100vw - 320px)/(1280 - 320)));
   }
 }
