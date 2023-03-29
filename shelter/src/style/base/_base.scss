@@ -6,7 +6,8 @@ body{
   @extend %font-prim;
   @include font($size: 1.5rem, $height: 160%, $spacing: 0);
   color: $color-dark-xl;
-  min-width: 1280px;
+  //max-width: 1280px;
+  width: 100%;
   background: $color-light-xl;
   cursor: default;
   a:checked &{
@@ -18,15 +19,15 @@ a{
   @extend %transition;
 }
 h1{
-  @include font($size: 44px, $height: 130%, $spacing: 0);
+  @include font($size: 4.4rem, $height: 130%, $spacing: 0);
   margin: 0;
 }
 
 h3{
-  @include font($size: 35px, $height: 130%);
+  @include font($size: 3.5rem, $height: 130%);
   margin: 0;
 }
 h4{
-  @include font($size: 20px, $height: 115%);
+  @include font($size: 2.0rem, $height: 115%);
   margin: 0;
 }
