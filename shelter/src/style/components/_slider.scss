@@ -25,6 +25,7 @@
     &:hover{
       @extend %transition;
       background: $color-primary-light;
+      border-color: $color-primary-light;
       cursor: pointer;
     }
   }
@@ -76,9 +77,11 @@
   &:hover{
     @extend %transition;
     box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
+    background: $color-light-xl;
     .button{
       @extend %transition;
       background: $color-primary-light;
+      border-color: $color-primary-light;
     }
   }
 }

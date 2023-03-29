@@ -14,5 +14,6 @@
   @extend %transition;
   &:hover{
     background: $color-primary-light;
+    border-color: $color-primary-light;
   }
 }
