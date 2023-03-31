@@ -1,3 +1,17 @@
 .main-page__list-cards{
-  gap: 90px;
+  //gap: 9%;
+  width: 82.5%;
+  @include media-between-tablet-mobile{
+    width: 100%;
+  }
+}
+.slider__button{
+  @include media-between-tablet-mobile{
+    &:nth-child(1){
+      order: 2;
+    }
+    &:nth-child(3){
+      order: 3;
+    }
+  }
 }

@@ -5,6 +5,15 @@
   width: 100%;
   justify-content: space-between;
   gap: 53px;
+  @include media-laptop-big {
+    gap: calc(12px + (53 - 12) * ((100vw - 768px)/(1180 - 768)));
+  }
+  @include media-between-tablet-mobile {
+    row-gap: 20px;
+    column-gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .slider__button{
@@ -50,6 +59,15 @@
   flex-direction: row;
   justify-content: space-between;
   //gap: 90px;
+  @include media-laptop-big{
+    justify-content: space-around;
+  }
+  @include media-tablet-big{
+    justify-content: space-between;
+    @include media-tablet-small{
+      justify-content: center;
+    }
+  }
 }
 .list-cards__element{
   display: flex;
@@ -84,4 +102,15 @@
       border-color: $color-primary-light;
     }
   }
+  &:nth-child(3){
+    @include media-laptop-big {
+      display: none;
+    }
+  }
+  &:nth-child(2){
+    @include media-tablet-small{
+      display: none;
+    }
+  }
+
 }
