@@ -6,6 +6,9 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 30px;
+    @include media-tablet-small {
+      padding: 30px calc(20px + (30 - 20) * ((100vw - 320px)/(760 - 320)));
+    }
   }
 }
 
