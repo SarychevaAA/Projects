@@ -12,7 +12,7 @@
   position: relative;
   width: 30px;
   height: 22px;
-  @include media-tablet-small{
+  @include media-change-menu{
     display: inline-block;
   }
   &:before {
