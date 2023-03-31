@@ -9,8 +9,10 @@
     @include media-content{
       gap: calc(81px + (120 - 81) * ((100vw - 768px)/(1280 - 768)));
     }
-    @include media-laptop-small {
+    @include media-laptop-small{
       flex-direction: column-reverse;
+    }
+    @include media-tablet-small {
       margin-top: calc(42px + (80 - 42) * ((100vw - 320px)/(760 - 320)));
     }
     @include media-between-tablet-mobile{
