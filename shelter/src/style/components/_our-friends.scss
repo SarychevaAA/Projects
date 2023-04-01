@@ -11,6 +11,7 @@
     @include media-tablet-small{
       gap: calc(42px + (60 - 42) * ((100vw - 320px)/(760 - 320)));
       padding-top: calc(42px + (80 - 42) * ((100vw - 320px)/(760 - 320)));
+      padding-bottom: calc(42px + (100 - 42) * ((100vw - 320px)/(760 - 320)));
     }
   }
 }
