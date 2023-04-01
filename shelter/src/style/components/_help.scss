@@ -10,6 +10,7 @@
       gap: calc(42px + (60 - 42) * ((100vw - 320px)/(760 - 320)));
       padding: 0 calc(15px + (30 - 15) * ((100vw - 320px)/(760 - 320)));
       margin-top: calc(42px + (80 - 42) * ((100vw - 320px)/(760 - 320)));
+      margin-bottom: calc(42px + (100 - 42) * ((100vw - 320px)/(760 - 320)));
     }
   }
 }
@@ -33,7 +34,6 @@
   @include media-change-help-list{
     column-gap: calc(60px + (120 - 60) * ((100vw - 768px)/(1001 - 768)));
     row-gap: 55px;
-    //column-gap: 65px;
     justify-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, 170px);
@@ -46,27 +46,10 @@
     @include media-mobile{
       grid-template-columns: auto auto;
     }
-    //grid-template-columns: auto auto;
   }
   @include media-mobile{
     grid-template-columns: auto auto;
   }
-  //@include media-laptop{
-  //  grid-template-columns: repeat(auto-fit, 130px);
-  //}
-}
-.list{
-  //display: grid;
-  //grid-template-columns: 1fr 1fr 1fr;
-  //grid-template-rows: 1fr 1fr 1fr;
-  //justify-items: center;
-  //row-gap: 55px;
-  //column-gap: 65px;
-  //justify-items: center;
-  //display: grid;
-  //grid-template-columns: repeat(auto-fit, minmax(130px, 170px));
-
-  //grid-gap: 1rem;
 }
 .list__element{
   display: flex;
