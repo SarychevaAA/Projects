@@ -12,6 +12,9 @@
 @mixin media-laptop-big {
   @media (max-width: $laptop-big-width) { @content; };
 }
+@mixin media-change-help-list {
+  @media (max-width: $change-help-list-width) { @content; };
+}
 @mixin media-laptop {
   @media (max-width: $laptop-width) { @content; };
 }
@@ -29,6 +32,9 @@
 }
 @mixin media-tablet-small {
   @media (max-width: $tablet-small-width) { @content; };
+}
+@mixin media-change-position-help-list {
+  @media (max-width: $change-position-help-list-width) { @content; };
 }
 @mixin media-between-tablet-mobile {
   @media (max-width: $between-tablet-mobile-width) { @content; };
