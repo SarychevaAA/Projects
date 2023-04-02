@@ -26,13 +26,15 @@
     }
   }
 }
-.slider__button{
-  @include media-between-tablet-mobile{
-    &:nth-child(1){
-      order: 2;
-    }
-    &:nth-child(3){
-      order: 3;
+.main-page__slider{
+  .slider__button{
+    @include media-between-tablet-mobile{
+      &:nth-child(1){
+        order: 2;
+      }
+      &:nth-child(3){
+        order: 3;
+      }
     }
   }
 }

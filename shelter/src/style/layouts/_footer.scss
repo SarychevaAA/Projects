@@ -60,6 +60,7 @@
 }
 .footer__img{
   @include media-tablet-small {
+    margin-top: -2px;
     width: calc(260px + (300 - 260) * ((100vw - 320px) / (760 - 320)));
     height: calc(269px + (310 - 269) * ((100vw - 320px) / (760 - 320)));
   }
