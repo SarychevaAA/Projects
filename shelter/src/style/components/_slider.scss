@@ -58,16 +58,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //gap: 90px;
-  @include media-laptop-big{
-    justify-content: space-around;
-  }
-  @include media-tablet-big{
-    justify-content: space-between;
-    @include media-tablet-small{
-      justify-content: center;
-    }
-  }
 }
 .list-cards__element{
   display: flex;
@@ -102,15 +92,4 @@
       border-color: $color-primary-light;
     }
   }
-  &:nth-child(3){
-    @include media-laptop-big {
-      display: none;
-    }
-  }
-  &:nth-child(2){
-    @include media-tablet-small{
-      display: none;
-    }
-  }
-
 }

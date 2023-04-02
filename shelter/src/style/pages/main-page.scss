@@ -1,8 +1,29 @@
 .main-page__list-cards{
-  //gap: 9%;
   width: 82.5%;
+  @include media-laptop-big{
+    justify-content: space-around;
+  }
+  @include media-tablet-big{
+    justify-content: space-between;
+    @include media-tablet-small{
+      justify-content: center;
+    }
+  }
   @include media-between-tablet-mobile{
     width: 100%;
+  }
+  .list-cards__element {
+    &:nth-child(3) {
+      @include media-laptop-big {
+        display: none;
+      }
+    }
+
+    &:nth-child(2) {
+      @include media-tablet-small {
+        display: none;
+      }
+    }
   }
 }
 .slider__button{
@@ -15,3 +36,4 @@
     }
   }
 }
+
