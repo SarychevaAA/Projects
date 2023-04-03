@@ -5,6 +5,15 @@
   width: 100%;
   justify-content: space-between;
   gap: 53px;
+  @include media-laptop-big {
+    gap: calc(12px + (53 - 12) * ((100vw - 768px)/(1180 - 768)));
+  }
+  @include media-between-tablet-mobile {
+    row-gap: 20px;
+    column-gap: 80px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
 .slider__button{
@@ -49,7 +58,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  //gap: 90px;
 }
 .list-cards__element{
   display: flex;

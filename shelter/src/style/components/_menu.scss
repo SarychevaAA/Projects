@@ -6,6 +6,9 @@
   gap: 35px;
   align-items: center;
   justify-content: space-between;
+  @include media-change-menu{
+    display: none;
+  }
 }
 
 .menu__element{
