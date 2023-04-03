@@ -12,3 +12,9 @@
   }
 }
 
+.header__hamburger{
+  display: none;
+  @include media-change-menu{
+    display: inline-block;
+  }
+}
