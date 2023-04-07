@@ -3,21 +3,10 @@ const body = document.querySelector('body')
 const modalWindow = document.querySelector('.modal')
 const container = document.querySelector('.modal-window__img');
 const modalImg = document.createElement('img');
-const petInfoButton = document.querySelectorAll('.button_border')
 let cardArr = document.querySelectorAll('.list-cards__element')
 const closeButton = document.querySelector('.modal-window__close-element')
 const leftButton = document.querySelector('#left-slider-btn')
 const rightButton = document.querySelector('#right-slider-btn')
-// petInfoButton.forEach((btn)=>{
-//     btn.addEventListener('click', ()=>{
-//         modalWindow.style.opacity = "1";
-//         modalWindow.style.visibility = "visible";
-//
-//         modalImg.src = petsInfo[btn.parentNode.id].img;
-//         modalImg.alt =  petsInfo[btn.parentNode.id].name;
-//         container.append(modalImg);
-//     })
-// })
 
 function generateModalWindow(card){
     modalWindow.style.opacity = "1";
@@ -43,7 +32,6 @@ cardArr.forEach((card)=>{
        generateModalWindow(card);
     })
 })
-
 
 closeButton.addEventListener('click', ()=>{
     modalWindow.style.opacity = "0";

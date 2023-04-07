@@ -14,11 +14,7 @@ function generateNewArr(sliderArr, index){
     return newArr
 }
 function initCards(){
-    // let countElements = 3;
     let sliderArr = [[], [], []]
-    // let leftArr = [];
-    // let currentArr = [];
-    // let rightArr = [];
     for (let index = 0; index < 3; index++){
         sliderArr[index] = generateNewArr(sliderArr, index);
     }
@@ -38,40 +34,12 @@ function moveRightStep(sliderArr){
     newSliderArr[2] = generateNewArr(newSliderArr, 2);
     return newSliderArr;
 }
-// function returnLeftStep(sliderArr){
-//     let newSliderArr = [[], [], []];
-//     newSliderArr[2] = sliderArr[1];
-//     newSliderArr[1] = sliderArr[0];
-//     newSliderArr[0] = generateNewArr(newSliderArr, 0);
-//     return newSliderArr;
-// }
-// function returnRightStep(sliderArr){
-//     let newSliderArr = [[], [], []];
-//     newSliderArr[0] = sliderArr[1];
-//     newSliderArr[1] = sliderArr[2];
-//     newSliderArr[2] = generateNewArr(newSliderArr, 2);
-//     return newSliderArr;
-// }
-// slider = initCards();
-// function cardRendering(sliderArr){
-//
-//     sliderArr.forEach(()=>{
-//         for (let i = 0; i < 3; i ++){
-//
-//         }
-//     })
-// }
+
 const leftButton = document.querySelector('#left-slider-btn')
 const rightButton = document.querySelector('#right-slider-btn')
 const carousel = document.querySelector("#carousel");
 const cardArr = document.querySelectorAll(".list-cards__element");
-const listCardsArr = document.querySelectorAll(".list-cards");
 
-const positionDict = {
-    'left-block': 0,
-    'current-block': 1,
-    'right-block': 2
-}
 const moveLeft = () => {
     carousel.classList.add("transition-left");
     leftButton.removeEventListener("click", moveLeft);
@@ -91,10 +59,6 @@ const cardsRenderingInit = (sliderArr) => {
              <button class="button button_border">Learn more</button>`;
         card.innerHTML = '';
         card.insertAdjacentHTML("afterbegin", html);
-        // const cardImg = document.createElement('img');
-        // cardImg.src = petsInfo[sliderArr[Math.trunc(index/3)][index%3]].img;
-        // cardImg.alt =  petsInfo[sliderArr[Math.trunc(index/3)][index%3]].name;
-        // card.insertBefore(cardImg, card.firstChild);
         card.id = sliderArr[Math.trunc(index/3)][index%3];
     })
 }
@@ -134,45 +98,24 @@ const cardsRenderingLeft = (sliderArr) => {
 
     }
 }
-// const cardsRenderingRight = (sliderArr) => {
-//     const listCardsArr = document.querySelectorAll(".list-cards");
-//     listCardsArr[0].remove()
-//     const listCards = document.createElement('div')
-//     listCards.classList.add("list-cards",  "main-page__list-cards",  "slider__content")
-//     carousel.insertAdjacentElement('beforeend', listCards);
-//     for (let index = 6; index < cardArr.length; index++){
-//         const html =
-//             `<div class="list-cards__element" id="${sliderArr[Math.trunc(index/3)][index%3]}">
-//                 <img src=${petsInfo[sliderArr[Math.trunc(index/3)][index%3]].img} alt='${petsInfo[sliderArr[Math.trunc(index/3)][index%3]].name} photo'>
-//                 <p class="name">${petsInfo[sliderArr[Math.trunc(index/3)][index%3]].name}</p>
-//                 <button class="button button_border">Learn more</button>
-//             </div>`;
-//         listCards.insertAdjacentHTML("beforeend", html);
-//
-//     }
-// }
+
 if (window.location.toString().indexOf('index.html') !== -1){
     let sliderCards = initCards();
     cardsRenderingInit(sliderCards);
     leftButton.addEventListener('click', ()=>{
-        console.log("LEFT");
         moveLeft();
     })
     rightButton.addEventListener('click', ()=>{
-        console.log("RIGHT");
         moveRight();
     })
-
     carousel.addEventListener("animationend", (animationEvent) => {
         if (animationEvent.animationName === "move-left") {
             carousel.classList.remove("transition-left");
             sliderCards = moveLeftStep(sliderCards);
-            console.log(sliderCards);
             cardsRenderingLeft(sliderCards);
         } else {
             carousel.classList.remove("transition-right");
             sliderCards = moveRightStep(sliderCards);
-            console.log(sliderCards);
             cardsRenderingRight(sliderCards);
         }
         leftButton.addEventListener("click", moveLeft);
