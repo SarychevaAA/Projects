@@ -4,3 +4,4 @@ import './style/index.scss'
 
 import './js/description-task.js'
 import './js/slider'
+import './js/modal-window'
