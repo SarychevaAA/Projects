@@ -46,5 +46,8 @@ h4{
 h5{
   @include font($size: 15px, $height: 17px, $spacing: 0.06em);
   margin: 0;
+  @include media-laptop{
+    @include font($size: 1.3rem, $height: 110%, $spacing: 0.06em);
+  }
 
 }
