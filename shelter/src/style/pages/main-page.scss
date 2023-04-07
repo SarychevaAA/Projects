@@ -1,31 +1,11 @@
 .main-page__list-cards{
-  width: 82.5%;
-  @include media-laptop-big{
-    justify-content: space-around;
-  }
-  @include media-tablet-big{
-    justify-content: space-between;
-    @include media-tablet-small{
-      justify-content: center;
+  min-width: 100%;
+  margin: 0 calc((100% - 270px * 3) / 4);
+    .list-cards__element {
+      width: 270px;
+      height: 435px;
     }
   }
-  @include media-between-tablet-mobile{
-    width: 100%;
-  }
-  .list-cards__element {
-    &:nth-child(3) {
-      @include media-laptop-big {
-        display: none;
-      }
-    }
-
-    &:nth-child(2) {
-      @include media-tablet-small {
-        display: none;
-      }
-    }
-  }
-}
 .main-page__slider{
   .slider__button{
     @include media-between-tablet-mobile{
@@ -36,6 +16,38 @@
         order: 3;
       }
     }
+  }
+
+  .carousel-wrapper {
+    width: 82.5%;
+    overflow: hidden;
+  }
+  .carousel {
+    display: flex;
+    position: relative;
+    left: calc(-100% - ((100% - 270px * 3) / 4) * 3);
+  }
+
+  @keyframes move-right {
+    from {left: calc(-100% - ((100% - 270px * 3) / 4) * 3);}
+    to {left: calc((-100% - ((100% - 270px * 3) / 4) * 2.5) * 2);}
+  }
+
+  .transition-right {
+    animation-name: move-right;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+  }
+
+  @keyframes move-left {
+    from {left: calc(-100% - ((100% - 270px * 3) / 4) * 3);}
+    to {left: calc(((-100% + 270px * 3) / 4));}
+  }
+
+  .transition-left {
+    animation-name: move-left;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
   }
 }
 
