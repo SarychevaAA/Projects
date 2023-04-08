@@ -109,7 +109,7 @@ if (window.location.toString().indexOf('index.html') !== -1){
         moveRight();
     })
     carousel.addEventListener("animationend", (animationEvent) => {
-        if (animationEvent.animationName === "move-left") {
+        if (animationEvent.animationName.includes("move-left")) {
             carousel.classList.remove("transition-left");
             sliderCards = moveLeftStep(sliderCards);
             cardsRenderingLeft(sliderCards);
