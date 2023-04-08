@@ -45,22 +45,26 @@ modalWindow.addEventListener('click', (event)=>{
         body.classList.remove("scroll-hidden");
     }
 })
-leftButton.addEventListener('click', ()=>{
-    console.log("LEFT");
-    cardArr = document.querySelectorAll('.list-cards__element')
-    cardArr.forEach((card)=>{
-        card.addEventListener('click', ()=>{
-            generateModalWindow(card);
+if (leftButton){
+    leftButton.addEventListener('click', ()=>{
+        console.log("LEFT");
+        cardArr = document.querySelectorAll('.list-cards__element')
+        cardArr.forEach((card)=>{
+            card.addEventListener('click', ()=>{
+                generateModalWindow(card);
+            })
         })
     })
-})
-rightButton.addEventListener('click', ()=>{
-    console.log("RIGHT");
-    cardArr = document.querySelectorAll('.list-cards__element')
-    cardArr.forEach((card)=>{
-        card.addEventListener('click', ()=>{
-            generateModalWindow(card);
+}
+if (rightButton){
+    rightButton.addEventListener('click', ()=>{
+        console.log("RIGHT");
+        cardArr = document.querySelectorAll('.list-cards__element')
+        cardArr.forEach((card)=>{
+            card.addEventListener('click', ()=>{
+                generateModalWindow(card);
+            })
         })
+        console.log(cardArr);
     })
-    console.log(cardArr);
-})
+}
