@@ -1,11 +1,12 @@
 .pets-page__friends{
   .wrapper{
+    padding-top: 200px;
     @include media-laptop-small{
       gap: calc(30px + (60 - 30) * ((100vw - 768px)/(960 - 768)));
       padding-bottom: calc(75px + (100 - 75) * ((100vw - 768px)/(960 - 768)));
       @include media-tablet-small{
         gap: calc(42px + (30 - 42) * ((100vw - 320px)/(760 - 320)));
-        padding-top: calc(42px + (80 - 42) * ((100vw - 320px)/(760 - 320)));
+        padding-top: calc(162px + (200 - 162) * ((100vw - 320px)/(760 - 320)));
         padding-bottom: calc(42px + (70 - 42) * ((100vw - 320px)/(760 - 320)));
       }
     }
