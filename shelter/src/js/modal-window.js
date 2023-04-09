@@ -11,6 +11,7 @@ const rightButton = document.querySelector('#right-slider-btn')
 function generateModalWindow(card){
     modalWindow.style.opacity = "1";
     modalWindow.style.visibility = "visible";
+    modalWindow.classList.add('modal_transition');
     const currentPet = petsInfo[card.id];
     modalImg.src = currentPet.img;
     modalImg.alt =  currentPet.name;
