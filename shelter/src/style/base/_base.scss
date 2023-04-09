@@ -9,6 +9,7 @@ body{
   width: 100%;
   background: $color-light-xl;
   cursor: default;
+  overflow-x: hidden;
   a:checked &{
     opacity: 0%;
     transition: opacity 5s ease-in 0.15s;

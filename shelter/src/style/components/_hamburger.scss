@@ -17,18 +17,22 @@
 }
 
 .hamburger{
+  cursor: pointer;
   position: relative;
+  z-index: 10;
   width: 30px;
   height: 22px;
   &::before {
     @extend %hamburger-line;
     @extend %hamburger-line-color;
+    @extend %transition;
     top: 0;
     left: 0;
   }
   &::after {
     @extend %hamburger-line;
     @extend %hamburger-line-color;
+    @extend %transition;
     bottom: 0;
     left: 0;
   }
@@ -37,6 +41,19 @@
 .hamburger__line{
   @extend %hamburger-line;
   @extend %hamburger-line-color;
+  @extend %transition;
   top: calc(50% - 1px);
   left: 0;
+}
+
+.active{
+  &.hamburger::before{
+      transform: rotate(-90deg) translate(-10px, -11px);
+    }
+  &.hamburger::after{
+      transform: rotate(-90deg) translate(10px, 9px);
+    }
+  .hamburger__line{
+    transform: rotate(-90deg) translate(0, -1px);
+  }
 }
