@@ -42,11 +42,4 @@
     justify-content: center;
     height: 1365px;
   }
-  .list-cards__element {
-    &:nth-last-child(-n+2) {
-      @include media-laptop-small {
-        display: none;
-      }
-    }
-  }
 }
