@@ -10,8 +10,6 @@ const moveMenu = ()=>{
 }
 
 if (hamburger && menu){
-    console.log(hamburger)
-    console.log(menu)
     hamburger.addEventListener('click', moveMenu)
     links.forEach((link)=>{
         link.addEventListener('click', moveMenu)

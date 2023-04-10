@@ -50,7 +50,6 @@ function renderingSlider(sliderCards, pageNumber, pageSize){
     listCards.innerHTML = '';
     let startNumber = pageNumber * pageSize;
     for (let i = (startNumber); i < (startNumber+pageSize); i++){
-        console.log(i, petsInfo[sliderCards[i]].name, sliderCards[i]);
         const index = sliderCards[i];
         const html =
             `<div class="list-cards__element" id="${index}">
@@ -127,7 +126,6 @@ const previousButton = document.querySelector('#previous-page')
 const buttons = document.querySelectorAll('.move-button')
 buttons.forEach((button)=>{
     button.addEventListener('click', ()=>{
-        console.log(pageNumber)
         if (button.id === 'start-page'){
             pageNumber = 0;
         }
@@ -142,7 +140,6 @@ buttons.forEach((button)=>{
         }
         changeButtonState();
         let size = (48/(maxCountPages+1));
-        console.log(pageNumber, sliderCards, maxCountPages, size);
         renderingSlider(sliderCards, pageNumber, size);
     })
 })
