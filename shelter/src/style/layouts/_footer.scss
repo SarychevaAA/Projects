@@ -11,13 +11,13 @@
       justify-content: space-between;
       gap: calc(80px + (160 - 80) * ((100vw - 1180px)/(1280 - 1180)));
       padding-top: calc(30px + (40 - 30) * ((100vw - 768px)/(1280 - 768)));
-    }
-    @include media-laptop{
-      justify-content: center;
-      row-gap: 65px;
-      column-gap: 60px;
-      @include media-between-tablet-mobile{
-        row-gap: 40px;
+      @include media-laptop{
+        justify-content: center;
+        row-gap: 65px;
+        column-gap: 60px;
+        @include media-between-tablet-mobile{
+          row-gap: 40px;
+        }
       }
     }
     @include media-tablet-small{
