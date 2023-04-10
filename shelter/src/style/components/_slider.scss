@@ -21,6 +21,7 @@
   display: flex;
   border-radius: 50%;
   font-weight: 900;
+  background: $color-light-l;
   border: 2px solid $color-primary;
   width: 52px;
   height: 52px;
@@ -59,6 +60,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
 .list-cards__element{
   display: flex;
   flex-direction: column;

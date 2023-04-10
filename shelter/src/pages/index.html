@@ -15,12 +15,14 @@
                 <span class="logo__title logo__title_color-on-dark-background">Cozy House</span>
                 <span class="logo__subtitle logo__subtitle_color-on-dark-background"> Shelter for pets in Boston</span>
             </a>
-            <nav class="menu header__menu">
-                <a href="#" class="menu__element menu__element_color-on-dark-background menu__element_active menu__element_active-color-on-dark-background">About the shelter</a>
-                <a href="./pets.html" class="menu__element menu__element_color-on-dark-background">Our pets</a>
-                <a href="#help" class="menu__element menu__element_color-on-dark-background">Help the shelter</a>
-                <a href="#contacts" class="menu__element menu__element_color-on-dark-background">Contacts</a>
-            </nav>
+            <div class="header__menu">
+                <nav class="menu menu_color-on-dark-background">
+                    <a href="#" class="menu__element menu__element_color-on-dark-background menu__element_active menu__element_active-color-on-dark-background">About the shelter</a>
+                    <a href="./pets.html" data-link="./pets.html" class="menu__element menu__element_color-on-dark-background">Our pets</a>
+                    <a href="#help" class="menu__element menu__element_color-on-dark-background">Help the shelter</a>
+                    <a href="#contacts" class="menu__element menu__element_color-on-dark-background">Contacts</a>
+                </nav>
+            </div>
             <div class="header__hamburger hamburger_color-on-dark-background">
                 <div class="hamburger">
                     <span class="hamburger__line"></span>
@@ -57,31 +59,69 @@
                     Our friends who<br>are looking for a house
                 </h3>
                 <div class="slider main-page__slider our-friends__slider">
-                    <div class="slider__button slider__button_active">
+                    <div class="slider__button slider__button_active" id="left-slider-btn">
                         <img src="../img/arrow-left.svg" alt="arrow-left">
                     </div>
-                    <div class="list-cards main-page__list-cards slider__content">
-                        <div class="list-cards__element">
-                            <img src="../img/pets/pets-katrine.png" alt="Katrina photo">
-                            <p class="name">Katrine</p>
-                            <button class="button button_border">Learn more</button>
-                        </div>
-                        <div class="list-cards__element">
-                            <img src="../img/pets/pets-jennifer.png" alt="Jennifer photo">
-                            <p class="name">Jennifer</p>
-                            <button class="button button_border">Learn more</button>
-                        </div>
-                        <div class="list-cards__element">
-                            <img src="../img/pets/pets-woody.png" alt="Woody photo">
-                            <p class="name">Woody</p>
-                            <button class="button button_border">Learn more</button>
+
+                    <div class="carousel-wrapper" id="carousel-wrapper">
+                        <div class="carousel" id="carousel">
+                            <div class="list-cards main-page__list-cards slider__content" id="left-block">
+                                <div class="list-cards__element">
+                                </div>
+                                <div class="list-cards__element">
+                                </div>
+                                <div class="list-cards__element">
+                                </div>
+                            </div>
+
+                            <div class="list-cards main-page__list-cards slider__content" id="current-block">
+                                <div class="list-cards__element">
+                                </div>
+                                <div class="list-cards__element">
+                                </div>
+                                <div class="list-cards__element">
+                                </div>
+                            </div>
+
+                            <div class="list-cards main-page__list-cards slider__content" id="right-block">
+                                <div class="list-cards__element">
+                                </div>
+                                <div class="list-cards__element">
+                                </div>
+                                <div class="list-cards__element">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="slider__button slider__button_active">
+
+                    <div class="slider__button slider__button_active" id="right-slider-btn">
                         <img src="../img/arrow-right.svg" alt="arrow-right">
                     </div>
                 </div>
                 <a href="./pets.html" class="button our-friends__button button_colored"><span>Get to know the rest</span></a>
+            </div>
+        </section>
+        <section class="modal">
+            <div class="modal-window">
+                <div class="modal-window__close-element">
+                    <img src="../img/vector.svg" alt="vector"></img>
+                </div>
+                <div class="modal-window__content">
+                    <div class="modal-window__img"></div>
+                    <div class="modal-window__info info">
+                        <div class="info__title">
+                            <h3 class="info__name" id="info-name"></h3>
+                            <h4 class="info__breed" id="info-breed"></h4>
+                        </div>
+                        <h5 class="info__description" id="info-description"></h5>
+                        <ul>
+                            <li class="info__age" id="info-age"><span>Age: </span></li>
+                            <li class="info__inoculations" id="info-inoculations"><span>Inoculations: </span></li>
+                            <li class="info__diseases" id="info-diseases"><span>Diseases: </span></li>
+                            <li class="info__parasites" id="info-parasites"><span>Parasites: </span></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="help" id="help">

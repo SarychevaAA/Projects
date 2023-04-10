@@ -12,6 +12,9 @@
 @mixin media-laptop-big {
   @media (max-width: $laptop-big-width) { @content; };
 }
+@mixin media-change-carousel {
+  @media (max-width: $change-carousel-width) { @content; };
+}
 @mixin media-change-help-list {
   @media (max-width: $change-help-list-width) { @content; };
 }
