@@ -9,10 +9,20 @@
   %hamburger-line-color{
     background: $color-primary;
   }
+  &:hover{
+    %hamburger-line-color{
+      background: $color-primary-light;
+    }
+  }
 }
 .hamburger_color-on-light-background{
   %hamburger-line-color{
-    background: $color-dark-4xl;
+    background: $color-dark-l;
+  }
+  &:hover{
+    %hamburger-line-color{
+      background: $color-dark-3xl;
+    }
   }
 }
 
