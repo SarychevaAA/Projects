@@ -8,11 +8,15 @@ const moveMenu = ()=>{
     menu.classList.toggle('active');
     body.classList.toggle('scroll-hidden');
 }
-
+const linkClick = ()=>{
+    hamburger.classList.remove('active');
+    menu.classList.remove('active');
+    body.classList.remove('scroll-hidden');
+}
 if (hamburger && menu){
     hamburger.addEventListener('click', moveMenu)
     links.forEach((link)=>{
-        link.addEventListener('click', moveMenu)
+        link.addEventListener('click', linkClick)
     })
     menu.addEventListener('click', (event)=>{
         if ([...event.target.classList].indexOf('header__menu') !== -1){
