@@ -67,7 +67,7 @@
 
   .transition-right {
     animation-name: move-right-3;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-timing-function: ease-out;
     @include media-change-carousel{
       animation-name: move-right-2;

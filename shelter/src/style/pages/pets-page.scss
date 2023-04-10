@@ -26,7 +26,14 @@
 .pets-page__slider{
   flex-wrap: wrap;
 }
+@keyframes show {
+  from { opacity: 0; transform: rotateY(90deg)}
+  to { opacity: 1; transform: rotateY(0deg)}
+}
 .pets-page__list-cards{
+  .list-cards__element{
+    animation: 0.8s show ease;
+  }
   flex-wrap: wrap;
   row-gap: 30px;
   column-gap: 40px;
